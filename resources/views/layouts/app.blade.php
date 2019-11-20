@@ -11,27 +11,13 @@
     <link href="{{ asset('css/owl.theme.default.css') }}" rel="stylesheet">
 
     <title>Cosmo-bella</title>
-    <style>
-        .item img{
-            height: 100%;
-        }
-        h1{
-            font-family: Cormorant Garamond;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 70px;
-        }
-    </style>
+    
 </head>
 <body>
 
-{{--    <script src="{{asset('js/slick.js')}}"></script>--}}
     @yield('content')
 
 <script src="{{ asset('js/app.js') }}"></script>
-{{--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>--}}
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-
 <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
 <script>
     var owl = $('.carousel_1');
@@ -41,11 +27,13 @@
         nav: false,
         dots: false,
         mouseDrag:false,
+        touchDrag:false,
         margin:10,
-        items: 1,
+        items:1,
         center:true,
         loop:true,
         margin:1,
+        rtl:true,
         animateOut: 'slideOutUp',
         animateIn: 'slideInUp',
     });
@@ -53,6 +41,7 @@
         nav: false,
         dots: false,
         mouseDrag:false,
+        touchDrag:false,
         margin:10,
         items: 1,
         loop:true,
@@ -63,6 +52,7 @@
         nav: false,
         dots: false,
         mouseDrag:false,
+        touchDrag:false,
         margin:10,
         items: 2,
         loop:true,
@@ -72,12 +62,12 @@
         owl.trigger('next.owl.carousel');
         owl2.trigger('next.owl.carousel');
         owl3.trigger('next.owl.carousel');
-    })
+    });
     $('.customPrevBtn').click(function() {
         owl.trigger('prev.owl.carousel');
         owl2.trigger('prev.owl.carousel');
         owl3.trigger('prev.owl.carousel');
-    })
+    });
 </script>
 
 </body>
