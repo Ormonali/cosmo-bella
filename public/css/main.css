@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'Cormorant Garamond Light';
+    src: local('Cormorant Garamond Light'), local('Cormorant-Garamond-Light'),
+    url('/fonts/CormorantGaramond-Light.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cormorant Garamond Medium';
+    src: local('CormorantGaramond-Medium'), local('Cormorant-Garamond-Medium'),
+    url('/fonts/CormorantGaramond-Medium.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cormorant Garamond Bold';
+    src: local('CormorantGaramond-Bold'), local('Cormorant-Garamond-Bold'),
+    url('/fonts/CormorantGaramond-Bold.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cormorant Garamond Black';
+    src: local('Cormorant Garamond Black'), local('Cormorant Garamond Black'),
+    url('/fonts/CormorantGaramond-Black.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+.cg-ultralight
+{
+    font-family: "Cormorant Garamond Ultralight";
+}
+.cg-light
+{
+    font-family: "Cormorant Garamond Light";
+}
+.cg-medium
+{
+    font-family: "Cormorant Garamond Medium";
+}
+.cg-bold
+{
+    font-family: "Cormorant Garamond Bold";
+}
+.cg-black
+{
+    font-family: "Cormorant Garamond Black";
+}
+
+@font-face {
+    font-family: 'Raleway Light';
+    src: local('Raleway Light'), local('Raleway-Light'),
+    url('/fonts/Raleway-Light.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway Medium';
+    src: local('Raleway-Medium'), local('Raleway-Medium'),
+    url('/fonts/Raleway-Medium.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway Bold';
+    src: local('Raleway-Bold'), local('Raleway-Bold'),
+    url('/fonts/Raleway-Bold.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway Black';
+    src: local('Raleway Black'), local('Raleway Black'),
+    url('/fonts/Raleway-Black.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+.rw-ultralight
+{
+    font-family: "Raleway Ultralight";
+}
+.rw-light
+{
+    font-family: "Raleway Light";
+}
+.rw-medium
+{
+    font-family: "Raleway Medium";
+}
+.rw-bold
+{
+    font-family: "Raleway Bold";
+}
+.rw-black
+{
+    font-family: "Raleway Black";
+}

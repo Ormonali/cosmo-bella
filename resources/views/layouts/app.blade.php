@@ -9,9 +9,9 @@
     <link href="{{ asset('css/animate.css') }}" rel="stylesheet">
     <link href="{{ asset('css/owl.carousel.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/owl.theme.default.css') }}" rel="stylesheet">
-
+    <link href="{{ asset('css/main.css') }}" rel="stylesheet">
     <title>Cosmo-bella</title>
-    
+
 </head>
 <body>
 
@@ -28,11 +28,10 @@
         dots: false,
         mouseDrag:false,
         touchDrag:false,
-        margin:10,
         items:1,
         center:true,
         loop:true,
-        margin:1,
+        margin:10,
         rtl:true,
         animateOut: 'slideOutUp',
         animateIn: 'slideInUp',
@@ -55,6 +54,7 @@
         touchDrag:false,
         margin:10,
         items: 2,
+        paginationSpeed:1200000,
         loop:true,
         margin:500,
     });
@@ -62,11 +62,15 @@
         owl.trigger('next.owl.carousel');
         owl2.trigger('next.owl.carousel');
         owl3.trigger('next.owl.carousel');
+        $(".owl-stage .active h1").removeClass('shadow-first');
+        $(".owl-stage .active h1").first().addClass('shadow-first');
     });
     $('.customPrevBtn').click(function() {
         owl.trigger('prev.owl.carousel');
         owl2.trigger('prev.owl.carousel');
         owl3.trigger('prev.owl.carousel');
+        $(".owl-stage .active h1").removeClass('shadow-first');
+        $(".owl-stage .active h1").first().addClass('shadow-first');
     });
 </script>
 
