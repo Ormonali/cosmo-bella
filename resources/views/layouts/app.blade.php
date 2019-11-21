@@ -19,6 +19,11 @@
 
 <script src="{{ asset('js/app.js') }}"></script>
 <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
+<script type="text/javascript">
+$(".burger-menu").click(function () {
+                $(this).toggleClass("menu-on");
+    });
+</script>
 <script>
     var owl = $('.carousel_1');
     var owl2 = $('.carousel_2');
@@ -35,6 +40,22 @@
         rtl:true,
         animateOut: 'slideOutUp',
         animateIn: 'slideInUp',
+        responsiveClass:true,
+        responsive:{
+        0:{
+            touchDrag:true,
+            mouseDrag:true,
+            nav:true
+        },
+        1190:{
+            nav:true,
+            touchDrag:true,
+            mouseDrag:true,
+        },
+        1200:{
+            items:1,
+        }
+        }
     });
     owl2.owlCarousel({
         nav: false,
@@ -56,7 +77,19 @@
         items: 2,
         paginationSpeed:1200000,
         loop:true,
-        margin:500,
+        margin:300,
+        responsiveClass:true,
+        responsive:{
+        0:{
+            items:1,
+        },
+        990:{
+            items:1,
+        },
+        1000:{
+            items:2,
+        }
+    }
     });
     $('.customNextBtn').click(function() {
         owl.trigger('next.owl.carousel');
@@ -71,6 +104,16 @@
         owl3.trigger('prev.owl.carousel');
         $(".owl-stage .active h1").removeClass('shadow-first');
         $(".owl-stage .active h1").first().addClass('shadow-first');
+    });
+    $('.owl-prev').click(function() {
+        owl.trigger('prev.owl.carousel');
+        owl3.trigger('prev.owl.carousel');
+        $(".owl-stage .active h1").removeClass('shadow-first');
+    });
+    $('.owl-next').click(function() {
+        owl.trigger('next.owl.carousel');
+        owl3.trigger('next.owl.carousel');
+        $(".owl-stage .active h1").removeClass('shadow-first');
     });
 </script>
 

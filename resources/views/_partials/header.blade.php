@@ -1,4 +1,4 @@
-<nav class="navbar menuse navbar-expand-xl py-3 w-100 d-xl-block d-none" style="z-index: 999; background: transparent; position: fixed;">
+<nav class="navbar menuse navbar-expand-lg py-3 w-100" style="z-index: 999; background: transparent; position: fixed;">
     <div class="container-fluid top-menu">
         <div class="row w-100 mx-5 pb-3">
             <div class="col-lg-5 collapse navbar-collapse pr-0">
@@ -25,8 +25,10 @@
                             <a href="tel:+996 501 433 433" class="text-fut-book text-scale" style="font-size: 14px; line-height: 17px; text-align: center; text-transform: uppercase; color: #444444;"><span><img src="/images/phone 1.png"></span>+996 (550) 510 500</a>
                         </li>
 
-                        <li class="nav-item px-3 position-relative">
-                            <img class="icon-flip" style="height:28px; width: 28px; margin-top:-5px;" src="{{ asset('images/group 93.png') }}" alt="">
+                        <li class="nav-item px-3 position-relative" style="pointer-events:visiblePainted;">
+                            <div class="burger-menu">
+                                <div class="burger"></div>  
+                            </div>
                         </li>
                     </ul>
                 </nav>
@@ -34,3 +36,83 @@
         </div>
     </div>
 </nav>
+<nav class="navbar menuse navbar-expand-md  navbar-expand py-3 w-100 d-lg-none d-sm-block" style="z-index: 999; background: transparent; position: fixed;">
+    <div class="container-fluid top-menu">
+        <div class="row w-100 mx-5 pb-3">
+            <div class="col-12 collapse navbar-collapse p-0"  id="navbarSupportedContent">
+                <a href="/">
+                    <img class="logo" src="{{ asset('images/logo.png') }}" alt="" style="width: 90%;">
+                </a>
+            <nav class="ml-auto ml-0 mt-3 row"style="pointer-events:visiblePainted;" >   
+                <div class="floar-right col-6">Menu</div>
+                <div class="burger-menu col-6">
+                    <div class="burger" style="width: 50%!important;"></div>  
+                </div>
+            </nav>
+        </div>
+    </div>
+</nav>
+<style type="text/css">
+.burger-menu {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.burger {
+  position: absolute;
+  background: rgba(111,111,111,1);
+  width: 70%;
+  height: 2px;
+  top: 50%;
+  right: 0px;
+  margin-top: -5px;
+  opacity: 1;
+}
+.burger::before {
+  position: absolute;
+  background: rgba(111,111,111,1);
+  width: 30px;
+  height: 2px;
+  top: 10px;
+  content: "";
+  display: block;
+}
+.burger::after {
+  position: absolute;
+  background: rgba(111,111,111,1);
+  width: 30px;
+  height: 2px;
+  bottom: 10px;
+  content: "";
+  display: block;
+}
+.burger::after, .burger::before, .burger {
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+}
+.burger-menu.menu-on .burger::after{
+   transform: rotate(-45deg);
+   -webkit-transform: rotate(-45deg);
+  bottom: 0px;
+}
+.burger-menu.menu-on .burger::before{
+   transform: rotate(45deg);
+   -webkit-transform: rotate(45deg);
+  top: 0px;
+}
+.burger-menu.menu-on .burger{
+ background: rgba(111,111,111,.0);
+}
+/* useless css */
+.burger-menu {
+  margin-left:auto;
+  margin-right: auto;
+}
+.big {
+  letter-spacing: 0px;
+  font-size: 51px;
+  display: block;
+  text-transform: uppercase;
+}
+</style>
