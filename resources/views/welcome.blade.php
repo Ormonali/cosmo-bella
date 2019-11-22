@@ -14,11 +14,11 @@
             font-size: 5.2vw;
         }
         p{
-           font-size: 1.2vw; 
+           font-size: 1.2vw;
         }
         .moore-btn{
-            top:39em;
-            left: 5%;
+            top:-20em;
+            left: 6%;
             z-index: 999;
         }
         .shadow-first{
@@ -96,7 +96,7 @@
         </div>
         <div class="row mr-0" style="pointer-events:visiblePainted;">
         <div class="col-1">
-            <div class="position-absolute d-none d-lg-block" style="top: 49em; width: 200px; left:72%; z-index: 999;">
+            <div class="position-realtive d-none d-lg-block" style="top: -35em; width: 200px; left:72%; z-index: 999;">
                 <a href="https://twitter.com"><img src="images/Vector (1).png" class="pr-3" style="width:40px;"></a>
                 <a href="https://youtube.com"><img src="images/Vector.png" class="pr-3" style="width:40px;"></a>
                 <a href="https://facebook.com"><img src="images/Vector (2).png" class="pr-3" style="width:40px;"></a>
@@ -138,9 +138,9 @@
                 <p class="rw-light">Новые поступления ждут Вас в нашем свадебном салоне</p>
             </div>
         </div>
-    </div>
-    <div class="moore-btn position-absolute d-none d-lg-block" style="pointer-events:visiblePainted;">
-        <a href="#about-us" class="btn btn-gold rounded-0 border-0 mt-5 px-4 py-2 rw-medium">Подробнее</a>
+        <div class="moore-btn position-relative d-none d-lg-block" style="pointer-events:visiblePainted;">
+            <a href="#about-us" class="btn btn-gold rounded-0 border-0 mt-5 px-4 py-2 rw-medium">Подробнее</a>
+        </div>
     </div>
     <img class="float-right rectangle position-absolute d-none d-lg-block" style="width: 24%; top: 24vh;left:37%; z-index: 1" src="/images/Rectangle 23.png">
         <img class="position-absolute d-none d-lg-block" style="top: 0px;left:5%;z-index: 999; height:100%;" src="{{asset('/images/Line 6.png')}}">
