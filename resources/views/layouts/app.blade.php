@@ -40,19 +40,19 @@ $(".burger-menu").click(function () {
         rtl:true,
         animateOut: 'slideOutUp',
         animateIn: 'slideInUp',
-        responsiveClass:true,
+        responsive:true,
         responsive:{
         0:{
             touchDrag:true,
             mouseDrag:true,
-            nav:true
+            nav:true,
         },
-        1190:{
+        990:{
             nav:true,
             touchDrag:true,
             mouseDrag:true,
         },
-        1200:{
+        1000:{
             items:1,
         }
         }
@@ -77,7 +77,6 @@ $(".burger-menu").click(function () {
         items: 2,
         paginationSpeed:1200000,
         loop:true,
-        margin:300,
         responsiveClass:true,
         responsive:{
         0:{
@@ -107,11 +106,13 @@ $(".burger-menu").click(function () {
     });
     $('.owl-prev').click(function() {
         owl.trigger('prev.owl.carousel');
+        owl2.trigger('prev.owl.carousel');
         owl3.trigger('prev.owl.carousel');
         $(".owl-stage .active h1").removeClass('shadow-first');
     });
     $('.owl-next').click(function() {
         owl.trigger('next.owl.carousel');
+        owl2.trigger('prev.owl.carousel');
         owl3.trigger('next.owl.carousel');
         $(".owl-stage .active h1").removeClass('shadow-first');
     });

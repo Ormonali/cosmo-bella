@@ -5,7 +5,7 @@
                 <nav class="mr-md-auto ml-0">
                     <ul class="navbar-nav" id="pick">
                         <li class="nav-item pr-1">
-                            <span><img src="/images/location 1.png"></span> г. Бишкек, ул. Раззакова, 56
+                            <span><img src="/images/location 1.png"></span> г. Бишкек, ул. Орозбекова, 17
                         </li>
                         <li class="nav-item px-3">
                             <span><img src="/images/access-time 1.png"></span> C 9.00 до 20.00 без выходных
@@ -27,7 +27,7 @@
 
                         <li class="nav-item px-3 position-relative" style="pointer-events:visiblePainted;">
                             <div class="burger-menu">
-                                <div class="burger"></div>  
+                                <div class="burger"></div>
                             </div>
                         </li>
                     </ul>
@@ -43,10 +43,10 @@
                 <a href="/">
                     <img class="logo" src="{{ asset('images/logo.png') }}" alt="" style="width: 90%;">
                 </a>
-            <nav class="ml-auto ml-0 mt-3 row"style="pointer-events:visiblePainted;" >   
+            <nav class="ml-auto ml-0 mt-3 row"style="pointer-events:visiblePainted;" >
                 <div class="floar-right col-6">Menu</div>
                 <div class="burger-menu col-6">
-                    <div class="burger" style="width: 50%!important;"></div>  
+                    <div class="burger" style="width: 50%!important;"></div>
                 </div>
             </nav>
         </div>
