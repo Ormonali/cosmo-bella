@@ -62,10 +62,9 @@ $(".burger-menu").click(function () {
         dots: false,
         mouseDrag:false,
         touchDrag:false,
-        margin:10,
+        margin:5,
         items: 1,
         loop:true,
-        margin:1,
         animateOut: 'fadeOut',
     });
     owl3.owlCarousel({

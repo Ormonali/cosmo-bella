@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6a19d676-eb1c-4358-ac67-9ac44b0396bf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/owl.carousel.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/owl.carousel.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/_partials/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/_partials/header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
     </list>
@@ -142,7 +140,7 @@
       <workItem from="1574228675609" duration="7204000" />
       <workItem from="1574239169846" duration="15570000" />
       <workItem from="1574307300299" duration="31839000" />
-      <workItem from="1574393623832" duration="15123000" />
+      <workItem from="1574393623832" duration="16169000" />
     </task>
     <servers />
   </component>

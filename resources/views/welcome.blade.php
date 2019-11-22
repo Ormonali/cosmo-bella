@@ -36,7 +36,7 @@
             width: 5vw;
         }
         .carousel_2,.tab-links{
-            margin-top: 35vh;
+            margin-top: 38vh;
             padding-left: 7vh;
         }
         .tab-links{
@@ -101,7 +101,10 @@
             .carousel_2{
                 margin-right: 10%!important;
                 margin-left: 10%!important;
-                margin-top: -6vh;
+                margin-top: -8vh;
+            }
+            .carousel_3{
+                margin-top: -8%;
             }
         }
         .carousel_3 .owl-stage  .active{
@@ -123,7 +126,7 @@
     <div class="main-tab">
         <div class="row" >
             <div class="col-1"></div>
-            <div class="owl-carousel owl-theme carousel_3 col-12 pl-4 ml-2 position-absolute row overflow-hidden" style="top:120px;left:3%;pointer-events:visiblePainted; z-index: 999;width:94.5%;">
+            <div class="owl-carousel owl-theme carousel_3 col-12 pl-4 ml-2 position-absolute row overflow-hidden" style="top:120px;left:3%;pointer-events:none; z-index: 999;width:94.5%;">
                 <div class="item" style="width: 300%;"><p class="display-6 d-none d-lg-block">1/</p><pre><h1 class="cg-bold shadow-first text-dark"><span class="d-lg-none display-6">1/</span>Свадебные платья</h1></pre></div>
                 <div class="item" style="width: 300%;"><p class="display-6 d-none d-lg-block">2/</p><pre><h1 class="cg-bold  text-dark"><span class="d-lg-none display-6">2/</span>Вечерние платья</h1></pre></div>
                 <div class="item" style="width: 300%;"><p class="display-6 d-none d-lg-block">3/</p><pre><h1 class="cg-bold  text-dark"><span class="d-lg-none display-6">3/</span>Мужские костюмы</h1></pre></div>
