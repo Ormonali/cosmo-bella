@@ -17,7 +17,7 @@
            font-size: 1.2vw;
         }
         .moore-btn{
-            top:-10em;
+            top:-0em;
             left: 6.5%;
             z-index: 999;
         }
@@ -122,7 +122,7 @@
         }
 
     </style>
-    @include('_partials.header')
+
     <div class="main-tab">
         <div class="row" >
             <div class="col-1"></div>
@@ -153,12 +153,21 @@
         <div class="owl-carousel owl-theme carousel_2 col-lg-3 mr-4 col-sm-5 pl-0" style="margin-left:-1.5em; text-overflow: ellipsis;">
             <div class="item rw-medium d-none d-sm-block">
                 <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение буква</p>
+                <div class="item moore-btn position-relative" style="pointer-events:visiblePainted;">
+                    <a href="/wedding_dresses" class="btn btn-gold rounded-0 border-0 mt-5 px-4 py-2 rw-medium">Подробнее</a>
+                </div>
             </div>
             <div class="item rw-medium d-none d-sm-block">
                 <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.A также реальное распределение букв</p>
+                <div class="item moore-btn position-relative" style="pointer-events:visiblePainted;">
+                    <a href="#about-us" class="btn btn-gold rounded-0 border-0 mt-5 px-4 py-2 rw-medium">Подробнее</a>
+                </div>
             </div>
             <div class="item rw-medium d-none d-sm-block">
                 <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст</p>
+                <div class="item moore-btn position-relative" style="pointer-events:visiblePainted;">
+                    <a href="#about-us" class="btn btn-gold rounded-0 border-0 mt-5 px-4 py-2 rw-medium">Подробнее</a>
+                </div>
             </div>
         </div>
         <div class="owl-carousel owl-theme carousel_1 col-lg-3 ml-5 col-sm-4 col-10 pr-4" style="margin-top: 20vh;">
@@ -185,13 +194,22 @@
                 <p class="rw-light display-8">Новые поступления ждут Вас в нашем свадебном салоне</p>
             </div>
         </div>
-        <div class="moore-btn position-relative" style="pointer-events:visiblePainted;">
-            <a href="#about-us" class="btn btn-gold rounded-0 border-0 mt-5 px-4 py-2 rw-medium">Подробнее</a>
-        </div>
+
+            {{--<div class="owl-carousel owl-theme carousel_4">--}}
+
+                {{--<div class="item moore-btn position-relative" style="pointer-events:visiblePainted;">--}}
+                    {{--<a href="#about-us" class="btn btn-gold rounded-0 border-0 mt-5 px-4 py-2 rw-medium">Подробнее</a>--}}
+                {{--</div>--}}
+                {{--<div class="item moore-btn position-relative" style="pointer-events:visiblePainted;">--}}
+                    {{--<a href="#about-us" class="btn btn-gold rounded-0 border-0 mt-5 px-4 py-2 rw-medium">Подробнее</a>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+
+
     </div>
-    <img class="float-right rectangle position-absolute d-none d-lg-block" style="width: 24%; top: 24vh;left:37.5%; z-index: 1" src="/images/Rectangle 23.png">
+    <img class="float-right rectangle position-absolute d-none d-lg-block" style="width: 24%; top: 24vh;left:37.5%; z-index: 1" src="/images/Rectangle23.png">
         <img class="position-absolute d-none d-lg-block" style="top: 0px;left:5%;z-index: 999; height:100%;" src="{{asset('/images/Line 6.png')}}">
         <img class="position-absolute d-none d-lg-block" style="top: 0px;left:36.1%; z-index: 999; height:100%" src="{{asset('/images/Line 6.png')}}">
-        <img class="position-absolute d-none d-lg-block" style="top: 0px;left: 67%; z-index: 9999; height:100%"src="{{asset('/images/Line 6.png')}}">
+        <img class="position-absolute d-none d-lg-block" style="top: 0px;left: 67%; z-index: 9999; height:100%" src="{{asset('/images/Line 6.png')}}">
     </div>
 @endsection

@@ -10,13 +10,16 @@
     <link href="{{ asset('css/owl.carousel.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/owl.theme.default.css') }}" rel="stylesheet">
     <link href="{{ asset('css/main.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
     <title>Cosmo-bella</title>
 
 </head>
 <body>
-
+@include('_partials.header')
     @yield('content')
+@include('_partials.footer')
 
+@include('modals.reserve')
 <script src="{{ asset('js/app.js') }}"></script>
 <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
 <script type="text/javascript">
@@ -28,6 +31,7 @@ $(".burger-menu").click(function () {
     var owl = $('.carousel_1');
     var owl2 = $('.carousel_2');
     var owl3 = $('.carousel_3');
+    var owl4 = $('.carousel_4');
     owl.owlCarousel({
         nav: false,
         dots: false,
@@ -89,10 +93,21 @@ $(".burger-menu").click(function () {
         }
     }
     });
+    owl4.owlCarousel({
+        nav: false,
+        dots: false,
+        mouseDrag:false,
+        touchDrag:false,
+        margin:5,
+        items: 1,
+        loop:true,
+        animateOut: 'fadeOut',
+    });
     $('.customNextBtn').click(function() {
         owl.trigger('next.owl.carousel');
         owl2.trigger('next.owl.carousel');
         owl3.trigger('next.owl.carousel');
+        owl4.trigger('next.owl.carousel');
         $(".owl-stage .active h1").removeClass('shadow-first');
         $(".owl-stage .active h1").first().addClass('shadow-first');
     });
@@ -100,6 +115,7 @@ $(".burger-menu").click(function () {
         owl.trigger('prev.owl.carousel');
         owl2.trigger('prev.owl.carousel');
         owl3.trigger('prev.owl.carousel');
+        owl4.trigger('prev.owl.carousel');
         $(".owl-stage .active h1").removeClass('shadow-first');
         $(".owl-stage .active h1").first().addClass('shadow-first');
     });
@@ -107,12 +123,14 @@ $(".burger-menu").click(function () {
         owl.trigger('prev.owl.carousel');
         owl2.trigger('prev.owl.carousel');
         owl3.trigger('prev.owl.carousel');
+        owl4.trigger('prev.owl.carousel');
         $(".owl-stage .active h1").removeClass('shadow-first');
     });
     $('.owl-next').click(function() {
         owl.trigger('next.owl.carousel');
         owl2.trigger('prev.owl.carousel');
         owl3.trigger('next.owl.carousel');
+        owl4.trigger('next.owl.carousel');
         $(".owl-stage .active h1").removeClass('shadow-first');
     });
 </script>

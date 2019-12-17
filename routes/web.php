@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/wedding_dresses', function () {
+   return view('wedding_dresses');
+});
