@@ -22,7 +22,7 @@
         "sass-loader": "^7.1.0"
     },
     "dependencies": {
-        "node-sass": "^4.13.0",
+        "node-sass": "^7.0.0",
         "slick-carousel": "^1.8.1",
         "mdbootstrap": "4.8.9"
     }
